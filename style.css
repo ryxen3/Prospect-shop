@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tc {
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.black {
+  color: #000;
+}
+
+.dark-grey {
+  color: #555;
+}
+
+.grey {
+  color: #777;
+}
+
+.light-grey {
+  color: #aaa;
+}
+
+.white {
+  color: #fff;
+}
+
+.green {
+  color: #60a32f;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs22 {
+  font-size: 22px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+.fw9 {
+  font-weight: 900;
+}
+
+/* title logo float maintainer */
+
+.title-container {
+  padding: 0px 20px 30px;
+}
+
+.title {
+  font-size: 42px;
+  float: left;
+}
+
+
+.title-logo {
+  text-align: right;
+  float: right;
+}
+
+.title-logo img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.title-logo span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+/* header part */
+
+.header{
+  background-image: url("assets/background/header_bg.png");
+  height:120px;
+  background-position: 100% 100%;
+  padding: 20px 0px;
+}
+
+.header-logo {
+  float: left;
+  padding-left: 20px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-menu {
+  float: right;
+  display: none;
+}
+
+.header-menu img {
+  width: 100%;
+  float: right;
+}
+
+.header-info {
+  float: right;
+  padding-right: 20px;
+}
+
+.header-contact {
+  text-align: right;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+
+.header-contact span{
+  font-weight: 600;
+}
+
+
+.header-navigation ul {
+  list-style-type: none;
+}
+
+.header-navigation li {
+  display: inline-block;
+}
+
+.header-navigation li:not(:first-child) {
+  padding-left: 15px;
+}
+
+/* about section part */
+
+.about-article {
+  background-color: #60a32f;
+  padding: 40px 0px;
+}
+
+/* about item part */
+
+.about-item {
+  width:33.333%;
+  float:left;
+  padding:0 20px;
+  min-height:280px;
+}
+
+.about-item-icon img {
+  display: block;
+  margin: 5px auto;
+  max-height :52px;
+}
+
+.about-item-title {
+  font-weight: 600 !important;
+  padding-bottom: 30px;
+}
+
+.about-item:hover {
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+/* client-part */
+
+.client-article {
+  padding: 40px 0px;
+}
+
+/* client-item part */
+
+.client-item {
+  width:33.333%;
+  float:left;
+  padding:0 20px;
+}
+
+.client-item-icon img {
+  display: block;
+  margin: 25px auto;
+}
+
+.client-item-logo img {
+  display: block;
+  margin: 25px auto;
+}
+
+.client-item-description {
+  padding : 40px 0px;
+}
+
+/* links section */
+
+.logo-links {
+  float: left;
+  width: 60%;
+  padding: 60px 0px;
+}
+
+.logo-links ul {
+  list-style-type: none;
+}
+
+.logo-links li {
+  display: inline-block;
+}
+
+.logo-links li:not(:last-child) {
+  padding-right: 60px;
+}
+
+.download-link img{
+  float: right;
+  width: 35%;
+}
+
+
+
+
+
+/* media screen */
+
+@media only screen and (max-width: 900px) {
+
+.header-contact {
+  display: none;
+}
+
+.header-navigation {
+  display: none;
+}
+
+.header-info {
+  width: 45%;
+}
+
+.header-menu {
+  display: block;
+  width: 100%;
+}
+
+.header-info {
+  width: 90px;
+  padding-right: 20px;
+}
+
+.about-item {
+  width: 45%;
+  padding : 0px 30px;
+}
+
+.about-item:nth-child(2n) {
+  float: right;
+}
+
+.client-item {
+  width: 100%;
+  padding: 0px 100px;
+}
+
+.logo-links {
+  width: 100%;
+}
+
+.download-link img{
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+.header-contact {
+  display: none;
+}
+
+.header-navigation {
+  display: none;
+}
+
+.header-menu {
+  display: block;
+  width: 50%;
+}
+
+.header-info {
+  width: 27.5%;
+}
+
+.header-logo {
+  width: 70%
+}
+
+.title-logo {
+  width: 30%;
+}
+
+.title-logo span {
+  display: none;
+}
+
+.about-item {
+  width: 100%;
+  padding: 0px 60px;
+  min-height: 250px;
+}
+
+}
