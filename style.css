@@ -185,6 +185,101 @@ a {
   padding: 40px 0px;
 }
 
+/* slider part */
+
+.slider-background {
+  background-image: url("assets/background/body_bg.jpg");
+  height: 50vw;
+  background-size: 100% 100%;
+}
+
+.slider-section {
+  height: 50vw;
+}
+
+.slider-main {
+  float: left;
+  font-size: 2.5em;
+  width: 45%;
+  height: 50vw;
+  padding-left: 50px;
+  position: relative;
+}
+
+.slider-main-text {
+  position: absolute;
+  top: 20%;
+}
+
+.slider-info {
+  float: right;
+  width: 45%;
+  background-image: url("assets/background/container_bg.png");
+  background-size: 100% 100%;
+  height: 50vw;
+}
+
+.slider-info-content {
+  width: 70%;
+  max-height: 40vw;
+  margin: 30px auto;
+}
+
+.slider-info-title-logo {
+  text-align: center;
+}
+
+.slider-info-title-logo img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+  margin-right: 10px;
+}
+
+.slider-info-title-logo span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.slider-info-description {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.slider-form label {
+  display: block;
+}
+
+.slider-form input[type=text],[type=email],[type=tel]{
+  width: 100%;
+  padding: 2%;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.slider-download {
+  background-color: #2d2d2d;
+}
+
+.slider-download-text {
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3%;
+}
+
+.slider-download-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 1%;
+}
+
+.slider-motto {
+  text-align: center;
+}
+
 /* about item part */
 
 .about-item {
@@ -231,11 +326,15 @@ a {
 
 .client-item-logo img {
   display: block;
-  margin: 25px auto;
+  margin: 0 auto;
 }
 
 .client-item-description {
-  padding : 40px 0px;
+  min-height: 250px;
+}
+
+.client-info {
+  min-height: 320px;
 }
 
 /* links section */
@@ -246,30 +345,74 @@ a {
   padding: 60px 0px;
 }
 
-.logo-links ul {
-  list-style-type: none;
+.logo-links img {
+  display: inline-block;
+  width: 24%;
+  padding-right: 40px;
 }
 
-.logo-links li {
+.download-link {
+  float: right;
+  width: 40%;
+  position: relative;
+  font-size: 1rem;
+}
+
+.download-link > img {
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+.download-link a {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 60%;
+}
+
+.download-guide {
+  float: left;
+  width: 60%;
+}
+
+.download-guide p {
+  font-size: 1.5em;
+}
+
+.download-guide-icon {
+  float: right;
+  width: 30%;
+}
+
+/* footer section */
+
+.footer{
+  background-image: url("assets/background/footer.png");
+  height:110px;
+  background-position: 100% 100%;
+  padding: 20px 0px;
+  color: #fff;
+}
+
+.footer-section {
+  padding: 0px 20px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-links {
   display: inline-block;
 }
-
-.logo-links li:not(:last-child) {
-  padding-right: 60px;
-}
-
-.download-link img{
-  float: right;
-  width: 35%;
-}
-
-
-
-
 
 /* media screen */
 
 @media only screen and (max-width: 900px) {
+
+/* header */
 
 .header-contact {
   display: none;
@@ -293,6 +436,25 @@ a {
   padding-right: 20px;
 }
 
+/* slider */
+
+.slider-background {
+  height: 100vw;
+}
+
+.slider-main {
+  width: 100%;
+  height: 100vw;
+}
+
+.slider-info {
+  width: 100%;
+  height: 100vw;
+  background-color: #fff;
+}
+
+/* about */
+
 .about-item {
   width: 45%;
   padding : 0px 30px;
@@ -302,22 +464,54 @@ a {
   float: right;
 }
 
+/* client */
+
 .client-item {
   width: 100%;
   padding: 0px 100px;
 }
 
+.client-item-description {
+  min-height: 150px;
+}
+
+.client-item-logo {
+  padding-top: 30px;
+}
+
+/* links */
+
 .logo-links {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.download-link {
   width: 100%;
 }
 
-.download-link img{
-  width: 100%;
+.download-guide {
+  width: 40%;
+}
+
+.download-guide p {
+  font-size: 3em;
+}
+
+.download-guide-icon {
+  width: 40%;
+}
+
+.download-guide-icon img {
+  float: right;
+  width: 60%;
 }
 
 }
 
 @media only screen and (max-width: 640px) {
+
+/* header */
 
 .header-contact {
   display: none;
@@ -348,10 +542,28 @@ a {
   display: none;
 }
 
+/* about */
+
 .about-item {
   width: 100%;
   padding: 0px 60px;
   min-height: 250px;
+}
+
+/* links */
+
+.logo-links {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.download-guide p {
+  font-size: 1.5em;
+}
+
+.download-guide-icon img {
+  float: right;
+  width: 50%;
 }
 
 }
