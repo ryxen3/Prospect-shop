@@ -84,6 +84,10 @@ a {
   font-size: 24px;
 }
 
+.fs36 {
+  font-size: 36px;
+}
+
 .fw6 {
   font-weight: 600;
 }
@@ -145,6 +149,7 @@ a {
   display: none;
 }
 
+
 .header-menu img {
   width: 100%;
   float: right;
@@ -199,16 +204,9 @@ a {
 
 .slider-main {
   float: left;
-  font-size: 2.5em;
   width: 45%;
   height: 50vw;
-  padding-left: 50px;
-  position: relative;
-}
-
-.slider-main-text {
-  position: absolute;
-  top: 20%;
+  padding: 150px 50px 40px;
 }
 
 .slider-info {
@@ -253,7 +251,7 @@ a {
 
 .slider-form input[type=text],[type=email],[type=tel]{
   width: 100%;
-  padding: 2%;
+  padding: 12px;
   display: inline-block;
   margin-bottom: 10px;
   font-size: 20px;
@@ -261,23 +259,25 @@ a {
 
 .slider-download {
   background-color: #2d2d2d;
+  margin: 30px 0px;
 }
 
 .slider-download-text {
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
-  padding: 3%;
+  padding: 30px 0px 30px 30px;
+  width: 80%;
 }
 
 .slider-download-icon {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 1%;
 }
 
 .slider-motto {
   text-align: center;
+  padding: 0px 20px;
 }
 
 /* about item part */
@@ -428,7 +428,6 @@ a {
 
 .header-menu {
   display: block;
-  width: 100%;
 }
 
 .header-info {
@@ -451,6 +450,14 @@ a {
   width: 100%;
   height: 100vw;
   background-color: #fff;
+}
+
+.slider-info-content {
+  max-height: 80vw;
+}
+
+.slider-download-text {
+  font-size: 25px;
 }
 
 /* about */
@@ -527,7 +534,7 @@ a {
 }
 
 .header-info {
-  width: 27.5%;
+  width: 28%;
 }
 
 .header-logo {
@@ -540,6 +547,13 @@ a {
 
 .title-logo span {
   display: none;
+}
+
+/* slider */
+
+.slider-main,
+.slider-info {
+  height: 150vw;
 }
 
 /* about */
