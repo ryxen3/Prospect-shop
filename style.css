@@ -521,8 +521,7 @@ a {
 }
 
 .download-guide p {
-  font-size: 250%;
-
+  font-size: 6vw;
 }
 
 .download-guide-icon {
@@ -589,10 +588,6 @@ a {
 .logo-links {
   width: 100%;
   padding: 20px 0px;
-}
-
-.download-guide p {
-  font-size: 150%;
 }
 
 
