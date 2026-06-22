@@ -84,8 +84,8 @@ a {
   font-size: 24px;
 }
 
-.fs36 {
-  font-size: 36px;
+.fs42 {
+  font-size: 42px;
 }
 
 .fw6 {
@@ -149,7 +149,6 @@ a {
   display: none;
 }
 
-
 .header-menu img {
   width: 100%;
   float: right;
@@ -204,9 +203,9 @@ a {
 
 .slider-main {
   float: left;
-  width: 45%;
+  width: 50%;
   height: 50vw;
-  padding: 150px 50px 40px;
+  padding: 150px 30px 40px;
 }
 
 .slider-info {
@@ -219,8 +218,9 @@ a {
 
 .slider-info-content {
   width: 70%;
-  max-height: 40vw;
+  height: 40vw;
   margin: 30px auto;
+  overflow: auto;
 }
 
 .slider-info-title-logo {
@@ -267,7 +267,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   padding: 30px 0px 30px 30px;
-  width: 80%;
+  width: 70%;
 }
 
 .slider-download-icon {
@@ -283,7 +283,7 @@ a {
 /* about item part */
 
 .about-item {
-  width:33.333%;
+  width:33.33%;
   float:left;
   padding:0 20px;
   min-height:280px;
@@ -292,7 +292,6 @@ a {
 .about-item-icon img {
   display: block;
   margin: 5px auto;
-  max-height :52px;
 }
 
 .about-item-title {
@@ -355,7 +354,6 @@ a {
   float: right;
   width: 40%;
   position: relative;
-  font-size: 1rem;
 }
 
 .download-link > img {
@@ -378,7 +376,7 @@ a {
 }
 
 .download-guide p {
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 .download-guide-icon {
@@ -390,10 +388,10 @@ a {
 
 .footer{
   background-image: url("assets/background/footer.png");
-  height:110px;
-  background-position: 100% 100%;
-  padding: 20px 0px;
+  background-size: 100% 100%;
+  align-items: center;
   color: #fff;
+  padding: 50px;
 }
 
 .footer-section {
@@ -453,7 +451,7 @@ a {
 }
 
 .slider-info-content {
-  max-height: 80vw;
+  height: 80vw;
 }
 
 .slider-download-text {
@@ -502,7 +500,8 @@ a {
 }
 
 .download-guide p {
-  font-size: 3em;
+  font-size: 250%;
+
 }
 
 .download-guide-icon {
@@ -553,7 +552,7 @@ a {
 
 .slider-main,
 .slider-info {
-  height: 150vw;
+  height: 100vw;
 }
 
 /* about */
@@ -572,12 +571,8 @@ a {
 }
 
 .download-guide p {
-  font-size: 1.5em;
+  font-size: 150%;
 }
 
-.download-guide-icon img {
-  float: right;
-  width: 50%;
-}
 
 }
