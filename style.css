@@ -205,7 +205,18 @@ a {
   float: left;
   width: 50%;
   height: 50vw;
-  padding: 150px 30px 40px;
+  position: relative;
+  padding: 0px 30px;
+}
+
+.slider-main-text {
+  position: absolute;
+  top: 20%;
+}
+
+.slider-main-little-text {
+  position: absolute;
+  bottom: 5%;
 }
 
 .slider-info {
@@ -295,7 +306,7 @@ a {
 }
 
 .about-item-title {
-  font-weight: 600 !important;
+  font-weight: 600;
   padding-bottom: 30px;
 }
 
@@ -437,11 +448,21 @@ a {
 
 .slider-background {
   height: 100vw;
+  background-size: 250% 100%;
+  background-position: 20% 20%;
 }
 
 .slider-main {
   width: 100%;
   height: 100vw;
+}
+
+.slider-main-text {
+  font-size: 8vw;
+}
+
+.slider-main-little-text {
+  font-size: 2.5vw;
 }
 
 .slider-info {
