@@ -84,8 +84,12 @@ a {
   font-size: 24px;
 }
 
-.fs42 {
-  font-size: 42px;
+.fs32 {
+  font-size: 32px;
+}
+
+.fs48 {
+  font-size: 48px;
 }
 
 .fw6 {
@@ -105,12 +109,14 @@ a {
 .title {
   font-size: 42px;
   float: left;
+  padding-top: 40px;
 }
 
 
 .title-logo {
   text-align: right;
   float: right;
+  padding-top: 40px;
 }
 
 .title-logo img {
@@ -132,7 +138,14 @@ a {
   background-image: url("assets/background/header_bg.png");
   height:120px;
   background-position: 100% 100%;
-  padding: 20px 0px;
+  position: relative;
+}
+
+.header-section {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
 }
 
 .header-logo {
@@ -182,41 +195,35 @@ a {
   padding-left: 15px;
 }
 
-/* about section part */
-
-.about-article {
-  background-color: #60a32f;
-  padding: 40px 0px;
-}
-
 /* slider part */
 
 .slider-background {
   background-image: url("assets/background/body_bg.jpg");
-  height: 50vw;
+  height: 80vw;
   background-size: 100% 100%;
 }
 
 .slider-section {
-  height: 50vw;
+  height: 80vw;
 }
 
 .slider-main {
   float: left;
-  width: 50%;
-  height: 50vw;
-  position: relative;
+  width: 55%;
+  height: 80vw;
   padding: 0px 30px;
+  position: relative;
 }
 
 .slider-main-text {
-  position: absolute;
-  top: 20%;
+  padding-top: 180px;
 }
 
 .slider-main-little-text {
   position: absolute;
   bottom: 5%;
+  left: 5%;
+  right: 5%;
 }
 
 .slider-info {
@@ -224,36 +231,29 @@ a {
   width: 45%;
   background-image: url("assets/background/container_bg.png");
   background-size: 100% 100%;
-  height: 50vw;
+  height: 80vw;
 }
 
 .slider-info-content {
   width: 70%;
-  height: 40vw;
+  height: 70vw;
   margin: 30px auto;
-  overflow: auto;
-}
-
-.slider-info-title-logo {
-  text-align: center;
 }
 
 .slider-info-title-logo img {
   display: inline-block;
   vertical-align: middle;
-  width: 10%;
-  margin-right: 10px;
+  width: 15%;
 }
 
 .slider-info-title-logo span {
   display: inline-block;
   vertical-align: middle;
-  padding-right: 10px;
+  padding-left: 30px;
 }
 
 .slider-info-description {
-  text-align: center;
-  padding: 20px 0px;
+  padding: 15px 0px;
 }
 
 .slider-form label {
@@ -278,7 +278,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   padding: 30px 0px 30px 30px;
-  width: 70%;
+  width: 75%;
 }
 
 .slider-download-icon {
@@ -287,9 +287,15 @@ a {
 }
 
 .slider-motto {
-  text-align: center;
   padding: 0px 20px;
 }
+
+/* about section part */
+
+.about-article {
+  background-color: #60a32f;
+}
+
 
 /* about item part */
 
@@ -300,9 +306,14 @@ a {
   min-height:280px;
 }
 
+.about-item-icon {
+  height: 60px;
+}
+
 .about-item-icon img {
   display: block;
-  margin: 5px auto;
+  margin: 0 auto;
+  max-height: 55px;
 }
 
 .about-item-title {
@@ -315,11 +326,6 @@ a {
   border-radius: 20px;
 }
 
-/* client-part */
-
-.client-article {
-  padding: 40px 0px;
-}
 
 /* client-item part */
 
@@ -345,6 +351,11 @@ a {
 
 .client-info {
   min-height: 320px;
+}
+
+.client-item:hover {
+  border: 1px solid #60a32f;
+  border-radius: 20px;
 }
 
 /* links section */
@@ -386,13 +397,18 @@ a {
   width: 60%;
 }
 
-.download-guide p {
-  font-size: 24px;
+.download-guide span {
+  font-size: 30px;
 }
 
 .download-guide-icon {
   float: right;
-  width: 30%;
+  width: 40%;
+}
+
+.download-guide-icon img{
+  float: right;
+  width: 60%;
 }
 
 /* footer section */
@@ -413,11 +429,80 @@ a {
   color: #fff;
 }
 
-.footer-links {
+.footer-links,
+.footer-separator {
   display: inline-block;
 }
 
 /* media screen */
+
+@media only screen and (max-width: 1199px) {
+
+.slider-main {
+  padding: 0px 3vw;
+}
+
+.slider-main-text {
+  font-size: 4vw;
+  padding-top: 15vw;
+}
+
+.slider-main-little-text {
+  font-size: 1.5vw;
+}
+
+.slider-info-title-logo img {
+  margin-right: 0.8vw;
+}
+
+.slider-info-title-logo span {
+  padding-left: 2vw;
+  font-size: 2.667vw;
+}
+
+.slider-info-description {
+  font-size: 1.4vw;
+  padding: 1.5vw 0;
+}
+
+.slider-form label {
+  font-size: 1.8vw;
+}
+
+.slider-form input[type=text],[type=email],[type=tel]{
+  padding: 1vw;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+}
+
+.slider-download {
+  margin: 2.5vw 0px;
+}
+
+.slider-download-text {
+  font-size: 2.5vw;
+  padding: 2.5vw 0px 2.5vw 2.5vw;
+}
+
+.slider-motto {
+  font-size: 1.5vw;
+  padding: 0px 1.5vw;
+}
+
+.download-guide span {
+  font-size: 2.5vw;
+}
+
+.download-guide-icon {
+  width: 40%;
+}
+
+.download-guide-icon img {
+  float: right;
+  width: 60%;
+}
+
+}
 
 @media only screen and (max-width: 900px) {
 
@@ -447,18 +532,19 @@ a {
 /* slider */
 
 .slider-background {
-  height: 100vw;
+  height: 150vw;
   background-size: 250% 100%;
   background-position: 20% 20%;
 }
 
 .slider-main {
   width: 100%;
-  height: 100vw;
+  height: 150vw;
 }
 
 .slider-main-text {
-  font-size: 8vw;
+  font-size: 7vw;
+  padding-top: 25vw;
 }
 
 .slider-main-little-text {
@@ -467,16 +553,55 @@ a {
 
 .slider-info {
   width: 100%;
-  height: 100vw;
-  background-color: #fff;
+  height: 150vw;
+  background-color: #fff
 }
 
 .slider-info-content {
-  height: 80vw;
+  height: 130vw;
+}
+
+.slider-info-title-logo span {
+  padding-left: 4vw;
+  font-size: 6vw;
+}
+
+.slider-info-description {
+  font-size: 3vw;
+  padding: 1.5vw 0;
+}
+
+.slider-form label {
+  font-size: 3.5vw;
+}
+
+.slider-form input[type=text],[type=email],[type=tel]{
+  padding: 2vw;
+  margin-bottom: 2vw;
+  font-size: 3vw;
+}
+
+.slider-download {
+  margin: 2.5vw 0px;
 }
 
 .slider-download-text {
-  font-size: 25px;
+  font-size: 5vw;
+  padding: 2.5vw 0px 2.5vw 2.5vw;
+}
+
+.slider-download-icon {
+  width: 20%;
+}
+
+.slider-download-icon img {
+  width: 70%;
+}
+
+
+.slider-motto {
+  font-size: 3vw;
+  padding: 0px 1.5vw;
 }
 
 /* about */
@@ -494,7 +619,7 @@ a {
 
 .client-item {
   width: 100%;
-  padding: 0px 100px;
+  padding: 0px 10vw;
 }
 
 .client-item-description {
@@ -520,17 +645,8 @@ a {
   width: 40%;
 }
 
-.download-guide p {
+.download-guide span {
   font-size: 6vw;
-}
-
-.download-guide-icon {
-  width: 40%;
-}
-
-.download-guide-icon img {
-  float: right;
-  width: 60%;
 }
 
 }
@@ -570,9 +686,10 @@ a {
 
 /* slider */
 
+.slider-background,
 .slider-main,
 .slider-info {
-  height: 100vw;
+  height: 150vw;
 }
 
 /* about */
