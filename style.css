@@ -55,6 +55,10 @@ a {
   color: #60a32f;
 }
 
+.fs14 {
+  font-size: 14px;
+}
+
 .fs16 {
   font-size: 16px;
 }
@@ -71,16 +75,20 @@ a {
   font-size: 22px;
 }
 
+.fs28 {
+  font-size: 28px;
+}
+
 .fs30 {
   font-size: 30px;
 }
 
-.fs36 {
-  font-size: 36px;
+.fs32 {
+  font-size: 32px;
 }
 
-.fs48 {
-  font-size: 48px;
+.fs54 {
+  font-size: 54px;
 }
 
 .fw6 {
@@ -103,7 +111,6 @@ a {
   padding: 40px 0px;
   font-weight: 100;
 }
-
 
 .title-logo {
   text-align: right;
@@ -172,7 +179,7 @@ a {
 
 .hero-section {
   background-image: url("assets/background/body_bg.jpg");
-  height: 950px;
+  height: 800px;
   background-size: cover;
   background-position: center;
 }
@@ -181,14 +188,13 @@ a {
 .hero-content {
   float: left;
   width: 55%;
-  height: 950px;
-  padding: 0px 30px;
+  height: 800px;
   position: relative;
 }
 
 .hero-content-text {
   position: absolute;
-  top: 20%;
+  top: 18%;
 }
 
 .hero-content-small-text {
@@ -199,29 +205,29 @@ a {
 
 .hero-form {
   float: right;
-  width: 45%;
-  height: 950px;
+  width: 35%;
   background-image: url("assets/background/container_bg.png");
-  background-size: 110% 100%;
+
+  background-size: 120% 100%;
   background-position: center;
 }
 
 .hero-form-content {
-  padding: 30px 72px;
+  padding: 20px 60px 100px;
 }
 
 .hero-form-title-logo img {
   float: left;
-  width: 60px;
+  width: 50px;
 }
 
 .hero-form-logo-text {
   float: right;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 .hero-form-description {
-  padding: 12px 0px;
+  padding: 6px 0px;
 }
 
 .hero-form-fields input[type="text"],
@@ -235,14 +241,14 @@ a {
 
 .hero-download {
   background-color: #2d2d2d;
-  margin: 30px 0px;
+  margin: 20px 0px;
 }
 
 .hero-download-text {
-  font-size: 30px;
+  font-size: 24px;
   display: inline-block;
   vertical-align: middle;
-  padding: 30px 0px 30px 30px;
+  padding: 24px 0px 24px 24px;
   width: 75%;
 }
 
@@ -252,7 +258,7 @@ a {
 }
 
 .hero-motto {
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 /* about section part */
@@ -385,6 +391,10 @@ a {
 
 @media only screen and (max-width: 1200px) {
 
+.header-logo {
+  padding-left: 2vw;
+}
+
 .header-contact a {
   font-size: 2.5vw;
 }
@@ -395,15 +405,15 @@ a {
 .hero-form,
 .hero-content,
 .hero-section {
-  height: 80vw;
+  height: 67vw;
 }
 
 .hero-content {
-  padding: 0px 3vw;
+  padding: 0px 2.5vw;
 }
 
 .hero-content-text {
-  font-size: 4vw;
+  font-size: 4.5vw;
 }
 
 .hero-content-small-text {
@@ -411,42 +421,42 @@ a {
 }
 
 .hero-form-content{
-  padding: 2.5vw 6vw;
+  padding: 2.2vw 5vw;
 }
 
 .hero-form-logo-text {
-  line-height: 5vw;
-  font-size: 3vw;
+  line-height: 4vw;
+  font-size: 2.3vw;
 }
 
 .hero-form-description {
-  font-size: 1.5vw;
-  padding: 1vw 0;
+  font-size: 1.3vw;
+  padding: 0.5vw 0;
 }
 
 .hero-form-title-logo img {
-  width: 5vw;
+  width: 4vw;
 }
 
 .hero-form-fields label {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
 }
 
 .hero-form-fields input[type="text"],
 .hero-form-fields input[type="email"],
 .hero-form-fields input[type="tel"]{
   padding: 1vw;
-  margin-bottom: 1vw;
+  margin-bottom: 0.8vw;
   font-size: 1.5vw;
 }
 
 .hero-download {
-  margin: 2.5vw 0px;
+  margin: 2vw 0px;
 }
 
 .hero-download-text {
-  font-size: 2.5vw;
-  padding: 2.5vw 0px 2.5vw 2.5vw;
+  font-size: 2vw;
+  padding: 2vw 0px 2vw 2vw;
 }
 
 .hero-download-icon img {
@@ -454,8 +464,8 @@ a {
 }
 
 .hero-motto {
-  font-size: 1.5vw;
-  padding: 0px 1.5vw;
+  font-size: 1.1vw;
+  padding: 0px 2.5vw;
 }
 
 .client-item {
@@ -510,10 +520,12 @@ a {
 .hero-form {
   height: 170vw;
   width: 100%;
+  background-size: 110% 100%;
+  background-position: center;
 }
 
 .hero-content-text {
-  font-size: 7vw;
+  font-size: 8vw;
 }
 
 .hero-content-small-text {
@@ -527,20 +539,21 @@ a {
 
 .hero-form-content {
   height: 160vw;
-  padding: 5vw 15vw;
+  padding: 8vw 15vw;
 }
 
 .hero-form-logo-text {
-  font-size: 6vw;
-  line-height: 15vw;
+  font-size: 6.5vw;
+  line-height: 12vw;
 }
 
 .hero-form-title-logo img {
-  width: 15vw;
+  width: 12vw;
 }
 
 .hero-form-description {
   font-size: 3vw;
+  padding: 2vw 0;
 }
 
 .hero-form-fields label {
@@ -573,8 +586,8 @@ a {
 }
 
 .hero-motto {
-  font-size: 3vw;
-  padding: 2.5vw 10vw;
+  font-size: 3.5vw;
+  padding: 2vw 5vw;
 }
 
 /* about & client title */
@@ -607,7 +620,7 @@ a {
 
 .client-item-description {
   font-size: 22px;
-  height: 200px;
+  height: 150px;
 }
 
 .client-item-logo {
@@ -676,6 +689,13 @@ a {
   height: 300px;
 }
 
+/* client */
+
+.client-item-description {
+  height: 200px;
+}
+
+
 /* about & client title */
 
 .title {
@@ -691,6 +711,5 @@ a {
 .footer {
   padding:30px 20px 0;
 }
-
 
 }
