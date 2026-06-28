@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue Light", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -81,10 +81,6 @@ a {
 
 .fs30 {
   font-size: 30px;
-}
-
-.fs32 {
-  font-size: 32px;
 }
 
 .fs54 {
@@ -200,20 +196,20 @@ a {
 .hero-content-small-text {
   position: absolute;
   bottom: 5%;
-  left: 10%;
+  left: 5%;
 }
 
 .hero-form {
   float: right;
   width: 35%;
+  height: 800px;
   background-image: url("assets/background/container_bg.png");
-
   background-size: 120% 100%;
   background-position: center;
 }
 
 .hero-form-content {
-  padding: 20px 60px 100px;
+  padding: 20px 60px 0px;
 }
 
 .hero-form-title-logo img {
@@ -241,11 +237,11 @@ a {
 
 .hero-download {
   background-color: #2d2d2d;
-  margin: 20px 0px;
+  margin: 20px 0px 15px;
 }
 
 .hero-download-text {
-  font-size: 24px;
+  font-size: 27px;
   display: inline-block;
   vertical-align: middle;
   padding: 24px 0px 24px 24px;
@@ -330,18 +326,18 @@ a {
   padding-right: 40px;
 }
 
-.download-link {
+.link-download-section {
   float: right;
   width: 40%;
   position: relative;
 }
 
-.download-link img {
+.link-download-section img {
   display: block;
   width: 100%;
 }
 
-.download-link a {
+.link-download-section a {
   color: #fff;
   position: absolute;
   top: 50%;
@@ -349,21 +345,21 @@ a {
   width: 60%;
 }
 
-.download-guide {
+.link-download-guide {
   float: left;
   width: 60%;
 }
 
-.download-guide span {
+.link-download-guide span {
   font-size: 30px;
 }
 
-.download-guide-icon {
+.link-download-guide-icon {
   float: right;
   width: 40%;
 }
 
-.download-guide-icon img{
+.link-download-guide-icon img{
   float: right;
   width: 60%;
 }
@@ -395,11 +391,12 @@ a {
   padding-left: 2vw;
 }
 
-.header-contact a {
-  font-size: 2.5vw;
-}
 .header-navigation-menu a { 
   font-size: 1.5vw;
+}
+
+.header-navigation-menu li:not(:first-child) {
+  padding-left: 1.25vw;
 }
 
 .hero-form,
@@ -451,11 +448,11 @@ a {
 }
 
 .hero-download {
-  margin: 2vw 0px;
+  margin: 1.6vw 0px 1.2vw;
 }
 
 .hero-download-text {
-  font-size: 2vw;
+  font-size: 2.25vw;
   padding: 2vw 0px 2vw 2vw;
 }
 
@@ -477,7 +474,7 @@ a {
   height: 300px;
 }
 
-.download-guide span {
+.link-download-guide span {
   font-size: 2.5vw;
 }
 
@@ -497,6 +494,11 @@ a {
 
 .header-menu-mobile {
   display: block;
+}
+
+.btn-menu {
+  background-color: #00000000;
+  border: none;
 }
 
 .header-navigation {
@@ -573,7 +575,7 @@ a {
 }
 
 .hero-download-text {
-  font-size: 5vw;
+  font-size: 5.5vw;
   padding: 5vw 0px 5vw 5vw;
 }
 
@@ -634,11 +636,11 @@ a {
   padding: 20px 0px;
 }
 
-.download-link {
+.link-download-section {
   width: 100%;
 }
 
-.download-guide span {
+.link-download-guide span {
   font-size: 6vw;
 }
 
